@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherukuri V V M Subhash | Java Full Stack Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Cherukuri V V M Subhash - Java Full Stack Developer specializing in scalable Spring Boot backends, 500+ DSA problems solved (LeetCode 1550+), B.Tech CSE (8.92 CGPA) at GVPCE, and SIH Team Lead.">
+  <meta name="keywords" content="Cherukuri V V M Subhash, Subhash Cherukuri, Java Developer, Spring Boot, Full Stack, Software Engineer, LeetCode, Data Structures, Portfolio">
+  <meta name="author" content="Cherukuri V V M Subhash">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:title" content="Cherukuri V V M Subhash | Portfolio">
+  <meta property="og:description" content="Java Full Stack Developer specializing in scalable Spring Boot backends and efficient DSA problem solving.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Prevent Flash of Unstyled Content (FOUC) -->
+  <meta name="color-scheme" content="light dark">
+  <script>
+    {
+      const colorScheme = localStorage.getItem("color-scheme");
+      if (colorScheme) {
+        document.documentElement.setAttribute('data-theme', colorScheme);
+      }
+      const accent = localStorage.getItem("portfolio-accent");
+      if (accent && accent !== 'cyan') {
+        document.documentElement.setAttribute('data-accent', accent);
+      }
+    }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header & Navigation
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Cherukuri Subhash Portfolio">
+        <div class="logo-badge">CS</div>
+        <span>Subhash<span class="dot">.dev</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Mode Switcher -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Color Theme" title="Switch Theme">
+          <span id="themeIcon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line></svg>
+          </span>
+        </button>
+
+        <!-- Dynamic Accent Palette Picker -->
+        <div class="accent-picker">
+          <button id="accentPickerBtn" class="accent-picker-btn" aria-label="Choose Accent Color" title="Theme Accent Colors"></button>
+          <div class="accent-dropdown" id="accentDropdown">
+            <div class="accent-option" data-accent="cyan">
+              <span class="accent-dot-preview" style="background: #00d2ff;"></span> Cyan
+            </div>
+            <div class="accent-option" data-accent="emerald">
+              <span class="accent-dot-preview" style="background: #10b981;"></span> Emerald
+            </div>
+            <div class="accent-option" data-accent="violet">
+              <span class="accent-dot-preview" style="background: #a855f7;"></span> Violet
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Modal Trigger -->
+        <button class="btn btn-primary btn-sm view-resume-trigger">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <main id="mainContent">
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left: Hero Introduction -->
+          <div class="hero-content">
+            <div class="status-pill reveal">
+              <span class="status-dot"></span>
+              <span>Available for Software Engineering Roles & Internships</span>
+            </div>
+
+            <div class="reveal">
+              <span class="hero-title-greeting">Hello, I'm</span>
+              <h1 class="hero-name text-gradient">Cherukuri V V M Subhash</h1>
+            </div>
+
+            <div class="hero-role-wrapper reveal">
+              <span>I specialize as a&nbsp;</span>
+              <span class="hero-role-dynamic" id="heroRoleDynamic">Scalable Spring Boot & Java Backend Developer</span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <p class="hero-description reveal">
+              Passionate <strong>Computer Science Engineering</strong> student at <strong>Gayatri Vidya Parishad College of Engineering</strong> (Autonomous) with an <strong>8.92 CGPA</strong>. I specialize in <strong>building scalable Spring Boot and Java backend projects</strong> with robust architecture, and <strong>solving complex Data Structures & Algorithms with clean, efficient, and optimized code (500+ problems solved, 1550+ LeetCode rating)</strong>. Eager to contribute to high-impact software engineering teams.
+            </p>
+
+            <!-- Quick Reach Social Bar -->
+            <div class="hero-social-bar reveal">
+              <a href="mailto:subhashcherukuri1729@gmail.com" class="social-pill-btn" title="Email Subhash">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>subhashcherukuri1729@gmail.com</span>
+              </a>
+
+              <a href="tel:8106125462" class="social-pill-btn" title="Phone Call">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+91 8106125462</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/cherukuri-v-v-m-subhash-55b238291/" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="LinkedIn Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://github.com/subhashcherukuri" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="GitHub Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>subhashcherukuri</span>
+              </a>
+
+              <a href="https://leetcode.com/u/subhashcherukuri/" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="LeetCode Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.738l3.782-4.048 5.411-5.787a1.38 1.38 0 0 0-.21-1.95A1.365 1.365 0 0 0 13.483 0zm-2.88 5.39a1.378 1.378 0 0 0-.961.438L4.35 11.23a1.38 1.38 0 1 0 1.95 1.955l5.292-5.402a1.38 1.38 0 0 0-.989-2.393z"/></svg>
+                <span>LeetCode 1550+</span>
+              </a>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="hero-cta-group reveal">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Live Projects</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get In Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Visual Showcase Card with Subhash's AI-Enhanced Portrait -->
+          <div class="hero-visual reveal">
+            <div class="hero-card-frame animate-float">
+              <div class="hero-image-wrapper">
+                <img src="assets/avatar.jpg" alt="Cherukuri V V M Subhash" width="400" height="400" loading="eager" fetchpriority="high">
+              </div>
+
+              <!-- Floating mini metrics badge -->
+              <div class="hero-floating-stat">
+                <div class="stat-item-mini">
+                  <span class="num">8.92</span>
+                  <span class="lbl">B.Tech CGPA</span>
+                </div>
+                <div style="width: 1px; height: 32px; background: var(--border-medium);"></div>
+                <div class="stat-item-mini">
+                  <span class="num">500+</span>
+                  <span class="lbl">DSA Solved</span>
+                </div>
+                <div style="width: 1px; height: 32px; background: var(--border-medium);"></div>
+                <div class="stat-item-mini">
+                  <span class="num">1550+</span>
+                  <span class="lbl">LeetCode</span>
+                </div>
+              </div>
+
+              <!-- Tech Pills -->
+              <div class="hero-tech-pills">
+                <span class="tech-chip">☕ Java</span>
+                <span class="tech-chip">🍃 Spring Boot</span>
+                <span class="tech-chip">🐘 PostgreSQL</span>
+                <span class="tech-chip">⚡ Groq LLM</span>
+                <span class="tech-chip">🛡️ Spring Security</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Metrics Impact Bar
+         ========================================================================= -->
+    <section class="metrics-section" aria-label="Key Achievements & Metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          
+          <div class="metric-card interactive-card reveal">
+            <div class="metric-value text-gradient metric-number" data-target="8.92" data-float="true">0.00</div>
+            <div class="metric-label">B.Tech CSE CGPA</div>
+            <div class="metric-sub">Gayatri Vidya Parishad College of Engg</div>
+          </div>
+
+          <div class="metric-card interactive-card reveal">
+            <div class="metric-value text-gradient metric-number" data-target="500" data-float="false" data-suffix="+">0</div>
+            <div class="metric-label">DSA Problems Solved</div>
+            <div class="metric-sub">Across LeetCode & Competitive Hubs</div>
+          </div>
+
+          <div class="metric-card interactive-card reveal">
+            <div class="metric-value text-gradient metric-number" data-target="1550" data-float="false" data-suffix="+">0</div>
+            <div class="metric-label">LeetCode Rating</div>
+            <div class="metric-sub">Consistent Algorithmic Performance</div>
+          </div>
+
+          <div class="metric-card interactive-card reveal">
+            <div class="metric-value text-gradient">SIH Lead</div>
+            <div class="metric-label">Smart India Hackathon</div>
+            <div class="metric-sub">Team Leadership, Design & Delivery</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Education Section (Replaced terminal matter with Sasi Junior College)
+         ========================================================================= -->
+    <section class="section-py" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education & Academic Excellence</h2>
+          <p class="section-subtitle">Consistent academic distinction across Bachelor of Technology and Intermediate studies.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Card 1: B.Tech at GVPCE -->
+          <div class="education-card interactive-card reveal">
+            <span class="college-badge">🏛️ Autonomous Engineering College</span>
+            <h3 class="education-title">Gayatri Vidya Parishad College of Engineering</h3>
+            <div class="education-meta">
+              <span>📍 Visakhapatnam, Andhra Pradesh</span>
+              <span>📅 2023 – Present</span>
+            </div>
+
+            <div class="education-gpa-box">
+              <div class="gpa-circle">8.92</div>
+              <div class="gpa-info">
+                <h4>Bachelor of Technology (B.Tech)</h4>
+                <p>Computer Science and Engineering • CGPA: <strong>8.92 / 10</strong></p>
+              </div>
+            </div>
+
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Coursework & core expertise in <strong>Data Structures & Algorithms</strong>, <strong>Object-Oriented Programming (Java)</strong>, <strong>Database Management Systems</strong>, and <strong>Computer Systems Architecture</strong>.
+            </p>
+
+            <ul class="project-highlights" style="margin-bottom: 0;">
+              <li>Maintained an outstanding academic standing with an 8.92 CGPA while leading technical projects.</li>
+              <li>Active contributor in collegiate hackathons, competitive coding platforms, and team innovation.</li>
+              <li>Strong foundation in relational databases, indexing, schema design, and concurrency.</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Intermediate at Sasi Junior College, Velivennu -->
+          <div class="education-card interactive-card reveal">
+            <span class="college-badge">🎓 Board of Intermediate Education</span>
+            <h3 class="education-title">Sasi Junior College</h3>
+            <div class="education-meta">
+              <span>📍 Velivennu, Andhra Pradesh</span>
+              <span>📅 2021 – 2023</span>
+            </div>
+
+            <div class="education-gpa-box">
+              <div class="gpa-circle" style="font-size: 0.95rem;">952<span>/1000</span></div>
+              <div class="gpa-info">
+                <h4>Intermediate Education (MPC)</h4>
+                <p>Mathematics, Physics & Chemistry • Score: <strong>952 / 1000 (95.2%)</strong></p>
+              </div>
+            </div>
+
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Achieved exceptional academic distinction with <strong>952 marks out of 1000</strong>, building a strong mathematical, logical reasoning, and analytical problem-solving foundation.
+            </p>
+
+            <ul class="project-highlights" style="margin-bottom: 0;">
+              <li>Secured an outstanding 95.2% score demonstrating disciplined work ethic and analytical rigor.</li>
+              <li>Strong focus on calculus, algebra, mechanics, and computational logic.</li>
+              <li>Formed the mathematical foundation for advanced algorithms and competitive programming.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Skills Matrix Section
+         ========================================================================= -->
+    <section class="section-py" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Curated expertise developed through hands-on full-stack development, competitive programming, and internship experience.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-nav reveal">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Programming Languages</button>
+          <button class="filter-btn" data-filter="backend">Backend & Frameworks</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="databases">Databases</button>
+          <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+          <button class="filter-btn" data-filter="core">Core CS</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Languages -->
+          <div class="skill-card interactive-card reveal" data-category="languages">
+            <div class="skill-icon-wrap">☕</div>
+            <div class="skill-info">
+              <div class="skill-name">Java</div>
+              <div class="skill-category-tag">Core & Advanced (OOP, Streams, Concurrency)</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="languages">
+            <div class="skill-icon-wrap">⚡</div>
+            <div class="skill-info">
+              <div class="skill-name">C Language</div>
+              <div class="skill-category-tag">Low-level logic, pointers & memory concepts</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="languages">
+            <div class="skill-icon-wrap">📊</div>
+            <div class="skill-info">
+              <div class="skill-name">SQL</div>
+              <div class="skill-category-tag">Complex queries, joins, indexes, subqueries</div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card interactive-card reveal" data-category="backend">
+            <div class="skill-icon-wrap">🍃</div>
+            <div class="skill-info">
+              <div class="skill-name">Spring Boot</div>
+              <div class="skill-category-tag">Microservices, dependency injection & REST APIs</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="backend">
+            <div class="skill-icon-wrap">🌐</div>
+            <div class="skill-info">
+              <div class="skill-name">RESTful APIs</div>
+              <div class="skill-category-tag">API Design, JSON payloads, HTTP status codes</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="backend">
+            <div class="skill-icon-wrap">🛡️</div>
+            <div class="skill-info">
+              <div class="skill-name">Spring Security</div>
+              <div class="skill-category-tag">Role-Based Access Control, Auth & CSRF</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="backend">
+            <div class="skill-icon-wrap">📦</div>
+            <div class="skill-info">
+              <div class="skill-name">Spring Data JPA & Hibernate</div>
+              <div class="skill-category-tag">ORM, Entity Relationships, Query Optimization</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="backend">
+            <div class="skill-icon-wrap">🤖</div>
+            <div class="skill-info">
+              <div class="skill-name">Spring AI & Groq LLM</div>
+              <div class="skill-category-tag">LLM Orchestration, Prompt Engineering & Triage</div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card interactive-card reveal" data-category="frontend">
+            <div class="skill-icon-wrap">🌐</div>
+            <div class="skill-info">
+              <div class="skill-name">HTML5</div>
+              <div class="skill-category-tag">Semantic markup, accessibility, modern layout</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="frontend">
+            <div class="skill-icon-wrap">🎨</div>
+            <div class="skill-info">
+              <div class="skill-name">CSS3 & Styling</div>
+              <div class="skill-category-tag">Flexbox, Grid, Glassmorphism, Animations</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="frontend">
+            <div class="skill-icon-wrap">🍃</div>
+            <div class="skill-info">
+              <div class="skill-name">Thymeleaf</div>
+              <div class="skill-category-tag">Server-side rendering, dynamic Spring templates</div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card interactive-card reveal" data-category="databases">
+            <div class="skill-icon-wrap">🐬</div>
+            <div class="skill-info">
+              <div class="skill-name">MySQL</div>
+              <div class="skill-category-tag">Relational schema design & optimization</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="databases">
+            <div class="skill-icon-wrap">🐘</div>
+            <div class="skill-info">
+              <div class="skill-name">PostgreSQL</div>
+              <div class="skill-category-tag">ACID compliance, JSONB, high-speed queries</div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card interactive-card reveal" data-category="tools">
+            <div class="skill-icon-wrap">🌿</div>
+            <div class="skill-info">
+              <div class="skill-name">Git & GitHub</div>
+              <div class="skill-category-tag">Version control, branching, PR workflows</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="tools">
+            <div class="skill-icon-wrap">📮</div>
+            <div class="skill-info">
+              <div class="skill-name">Postman</div>
+              <div class="skill-category-tag">API testing, mocking & endpoint validation</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="tools">
+            <div class="skill-icon-wrap">💡</div>
+            <div class="skill-info">
+              <div class="skill-name">IntelliJ IDEA & VS Code</div>
+              <div class="skill-category-tag">Primary IDE workflows, debugging, profiling</div>
+            </div>
+          </div>
+
+          <!-- Core CS -->
+          <div class="skill-card interactive-card reveal" data-category="core">
+            <div class="skill-icon-wrap">🧩</div>
+            <div class="skill-info">
+              <div class="skill-name">Data Structures & Algorithms</div>
+              <div class="skill-category-tag">500+ Solved • Trees, Graphs, DP, Heaps</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="core">
+            <div class="skill-icon-wrap">📐</div>
+            <div class="skill-info">
+              <div class="skill-name">OOP Concepts</div>
+              <div class="skill-category-tag">Inheritance, Polymorphism, Encapsulation, SOLID</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="core">
+            <div class="skill-icon-wrap">🗄️</div>
+            <div class="skill-info">
+              <div class="skill-name">DBMS</div>
+              <div class="skill-category-tag">Normalization, Transactions, Indexing & ACID</div>
+            </div>
+          </div>
+
+          <div class="skill-card interactive-card reveal" data-category="core">
+            <div class="skill-icon-wrap">⚙️</div>
+            <div class="skill-info">
+              <div class="skill-name">Operating System</div>
+              <div class="skill-category-tag">Processes, Threads, Concurrency, Memory & Scheduling</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Featured Projects Section (Clean Software Cards without images)
+         ========================================================================= -->
+    <section class="section-py" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Production Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Scalable Spring Boot backends, intelligent LLM integrations, and enterprise database portals with active live deployments.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: AI Customer Support Ticket Management System -->
+          <article class="project-card interactive-card reveal">
+            <div class="project-card-header">
+              <span class="project-badge-pill">
+                <span class="status-dot"></span>
+                <span>Live on Render</span>
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">Spring Boot 3 + Groq AI</span>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Java</span>
+                <span class="project-tech-tag">Spring Boot</span>
+                <span class="project-tech-tag">Groq LLM</span>
+                <span class="project-tech-tag">Spring AI</span>
+                <span class="project-tech-tag">PostgreSQL</span>
+                <span class="project-tech-tag">Spring Security</span>
+              </div>
+              
+              <h3 class="project-title">AI Customer Support Ticket Management System</h3>
+              
+              <ul class="project-highlights">
+                <li>Engineered an AI-powered system to automatically create, triage, assign, and manage enterprise customer support tickets.</li>
+                <li>Integrated <strong>Groq LLM</strong> with <strong>Spring AI</strong> to perform instantaneous ticket analysis: auto-categorization, priority scoring, sentiment evaluation, and executive summary generation.</li>
+                <li>Implemented comprehensive <strong>Role-Based Access Control (RBAC)</strong>, ticket conversation streams, agent assignment load-balancing, and an admin analytics dashboard.</li>
+                <li>Deployed live on Render with connected PostgreSQL database.</li>
+              </ul>
+              
+              <div class="project-footer-actions">
+                <button class="btn btn-secondary btn-sm" onclick="openProjectModal('ai-support')">
+                  <span>Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                
+                <div class="project-action-links">
+                  <a href="https://github.com/subhashcherukuri/ai-customer-support-ticket-system" target="_blank" rel="noopener noreferrer" class="action-link-btn" title="View Source Code on GitHub">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                  
+                  <a href="https://ai-customer-support-ticket-system-bbr5.onrender.com" target="_blank" rel="noopener noreferrer" class="action-link-btn btn-accent" title="Open Live Application">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline></svg>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: EduEnroll Student Course Registration Portal -->
+          <article class="project-card interactive-card reveal">
+            <div class="project-card-header">
+              <span class="project-badge-pill">
+                <span class="status-dot"></span>
+                <span>Live on Render</span>
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">Spring Boot + JPA / MySQL</span>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Java</span>
+                <span class="project-tech-tag">Spring Boot</span>
+                <span class="project-tech-tag">Spring Data JPA</span>
+                <span class="project-tech-tag">Hibernate</span>
+                <span class="project-tech-tag">MySQL</span>
+                <span class="project-tech-tag">Thymeleaf</span>
+              </div>
+              
+              <h3 class="project-title">EduEnroll – Online Student Course Registration Portal</h3>
+              
+              <ul class="project-highlights">
+                <li>Architected an end-to-end full-stack portal streamlining student course registration, quota enforcement, and department enrollment workflows.</li>
+                <li>Built secure role-based authentication and authorization using <strong>Spring Security</strong> for Admin and Student accounts.</li>
+                <li>Engineered complete CRUD operations for students, faculty, course catalogs, and enrollment records with tight validation.</li>
+                <li>Integrated <strong>MySQL</strong> with <strong>Spring Data JPA and Hibernate</strong>, optimizing relational queries and avoiding N+1 performance bottlenecks.</li>
+                <li>Deployed live on Render with production database setup.</li>
+              </ul>
+              
+              <div class="project-footer-actions">
+                <button class="btn btn-secondary btn-sm" onclick="openProjectModal('edu-enroll')">
+                  <span>Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                
+                <div class="project-action-links">
+                  <a href="https://github.com/subhashcherukuri/eduenroll-student-course-registration" target="_blank" rel="noopener noreferrer" class="action-link-btn" title="View Source Code on GitHub">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                  
+                  <a href="https://eduenroll-student-course-registration.onrender.com" target="_blank" rel="noopener noreferrer" class="action-link-btn btn-accent" title="Open Live Application">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline></svg>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AI-Driven Archaeological Mapping -->
+          <article class="project-card interactive-card reveal">
+            <div class="project-card-header">
+              <span class="project-badge-pill">
+                <span>🤖 Research Initiative</span>
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">Infosys SpringBoard ML</span>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Machine Learning</span>
+                <span class="project-tech-tag">Satellite Imagery</span>
+                <span class="project-tech-tag">Drone Datasets</span>
+                <span class="project-tech-tag">Computer Vision</span>
+              </div>
+              
+              <h3 class="project-title">AI-Driven Archaeological Site Mapping</h3>
+              
+              <ul class="project-highlights">
+                <li>Collected, annotated, and preprocessed high-resolution satellite and drone multispectral datasets for AI model training.</li>
+                <li>Developed, tested, and evaluated computer vision models specifically tailored for archaeological ruin pattern detection.</li>
+                <li>Collaborated in agile sprint cycles with industry mentors through daily technical standups and project evaluations.</li>
+              </ul>
+              
+              <div class="project-footer-actions">
+                <button class="btn btn-secondary btn-sm" onclick="openProjectModal('ai-archaeology')">
+                  <span>Research Breakdown</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                
+                <div class="project-action-links">
+                  <a href="https://github.com/springboardmentor54158a/AIDriven-Archaeological-Site-Mapping/tree/subhash" target="_blank" rel="noopener noreferrer" class="action-link-btn" title="View Source Code on GitHub">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub (subhash branch)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Experience & Internship Section
+         ========================================================================= -->
+    <section class="section-py" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Industry Internship</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Practical engineering exposure in collaborative teams and industry programs.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-card reveal">
+            <div class="timeline-node-icon">💼</div>
+            <div class="timeline-content interactive-card">
+              <div class="timeline-meta-row">
+                <h3 class="timeline-company">Infosys SpringBoard</h3>
+                <span class="timeline-date-badge">Dec 2025 – Jan 2026 • Online</span>
+              </div>
+              <div class="timeline-role">
+                <span>Artificial Intelligence Virtual Internship</span>
+                <span style="color: var(--accent-primary);">•</span>
+                <a href="https://github.com/springboardmentor54158a/AIDriven-Archaeological-Site-Mapping/tree/subhash" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); font-size: 0.875rem; text-decoration: underline;">GitHub Repository</a>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Gained deep, practical experience in Machine Learning and Artificial Intelligence fundamentals through hands-on technical labs and applied projects.</li>
+                <li>Actively collaborated with the cross-functional cohort through daily standups, architectural discussions, and peer code reviews.</li>
+                <li>Collected, annotated, filtered, and preprocessed massive satellite and drone topographical image datasets for supervised machine learning training.</li>
+                <li>Developed and systematically evaluated predictive AI models for the <strong>AI-Driven Archaeological Site Mapping</strong> initiative.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Achievements & Competitive Coding Section
+         ========================================================================= -->
+    <section class="section-py" id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Milestones & Honors</span>
+          <h2 class="section-title">Achievements & Competitive Coding</h2>
+          <p class="section-subtitle">Consistent track record of algorithmic dedication, competitive programming, and collaborative leadership.</p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- LeetCode 500+ -->
+          <div class="achievement-card interactive-card reveal">
+            <div class="achievement-card-icon">🧠</div>
+            <h3 class="achievement-title">500+ DSA Problems Solved</h3>
+            <p class="achievement-desc">
+              Solved over 500+ complex algorithmic and data structure problems across LeetCode, HackerRank, and competitive platforms, demonstrating mastery in Graph theory, Dynamic Programming, Trees, Heaps, and Backtracking with optimal time and space complexity.
+            </p>
+            <a href="https://leetcode.com/u/subhashcherukuri/" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <span>View LeetCode Profile</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Rating 1550+ -->
+          <div class="achievement-card interactive-card reveal">
+            <div class="achievement-card-icon">⭐</div>
+            <h3 class="achievement-title">1550+ LeetCode Contest Rating</h3>
+            <p class="achievement-desc">
+              Achieved and maintained a competitive LeetCode contest rating of 1550+ through consistent weekly contest participation, optimizing time and space complexity under real-time contest environments.
+            </p>
+            <a href="https://leetcode.com/u/subhashcherukuri/" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <span>Inspect Contest Stats</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Smart India Hackathon Team Lead -->
+          <div class="achievement-card interactive-card reveal">
+            <div class="achievement-card-icon">🏆</div>
+            <h3 class="achievement-title">Smart India Hackathon (SIH) Team Lead</h3>
+            <p class="achievement-desc">
+              Led a multidisciplinary engineering team at the prestigious Smart India Hackathon, taking charge of end-to-end solution design, rapid prototyping, agile task coordination, and technical presentation before evaluation panels.
+            </p>
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-primary);">
+              Leadership • Solution Architecture • Rapid Delivery
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Contact & Connect Section
+         ========================================================================= -->
+    <section class="section-py" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing software engineering opportunities, internships, or technical collaborations? Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Details Cards -->
+          <div class="contact-info-cards reveal">
+            
+            <div class="contact-card interactive-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-text">
+                  <h4>Email Address</h4>
+                  <p>subhashcherukuri1729@gmail.com</p>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('subhashcherukuri1729@gmail.com', 'Email Address')" title="Copy Email">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card interactive-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">📞</div>
+                <div class="contact-card-text">
+                  <h4>Phone / Mobile</h4>
+                  <p>+91 8106125462</p>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('8106125462', 'Phone Number')" title="Copy Phone">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card interactive-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">💼</div>
+                <div class="contact-card-text">
+                  <h4>LinkedIn Profile</h4>
+                  <p>Cherukuri V V M Subhash</p>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/cherukuri-v-v-m-subhash-55b238291/" target="_blank" rel="noopener noreferrer" class="copy-btn" style="text-align: center;">
+                Visit
+              </a>
+            </div>
+
+            <div class="contact-card interactive-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">📍</div>
+                <div class="contact-card-text">
+                  <h4>Location</h4>
+                  <p>Visakhapatnam, Andhra Pradesh, India</p>
+                </div>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 600;">Open to Relocation</span>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card interactive-card reveal">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Send a Message</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Leave your contact details and message, and I will respond as soon as possible.</p>
+            
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Satya Nadella" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="you@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" class="form-input" placeholder="Software Engineer Opportunity / Project Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message *</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Hello Subhash, I came across your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 <strong>Cherukuri V V M Subhash</strong>. Crafted with clean code, scalable architecture, and modern CSS.
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/subhashcherukuri" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="GitHub">GitHub</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/cherukuri-v-v-m-subhash-55b238291/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="LinkedIn">LinkedIn</a>
+        <span>•</span>
+        <a href="https://leetcode.com/u/subhashcherukuri/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="LeetCode">LeetCode</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- =========================================================================
+       Modals: Project Architecture Detail Dialog
+       ========================================================================= -->
+  <dialog id="projectModal" class="modal-dialog">
+    <div class="modal-header">
+      <h3 style="font-size: 1.15rem; font-weight: 700;">Project Engineering & Architecture</h3>
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Project Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="projectModalContent">
+      <!-- Injected dynamically by js/projects.js -->
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       Modals: Clean Printable Resume Modal
+       ========================================================================= -->
+  <dialog id="resumeModal" class="modal-dialog" style="max-width: 780px;">
+    <div class="modal-header">
+      <div>
+        <h3 style="font-size: 1.2rem; font-weight: 700;">Cherukuri V V M Subhash — Curriculum Vitae</h3>
+        <p style="font-size: 0.8rem; color: var(--text-secondary);">Computer Science Engineering • B.Tech CGPA: 8.92 • Intermediate: 952/1000</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="assets/resume.pdf" download="resume.pdf" class="btn btn-primary btn-sm" id="downloadResumeBtn" title="Download Subhash's Resume PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download PDF</span>
+        </a>
+        <button id="closeResumeBtn" class="modal-close-btn" aria-label="Close Resume Modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal-body" style="font-size: 0.925rem; line-height: 1.6;">
+      
+      <!-- Resume Header -->
+      <div style="text-align: center; border-bottom: 2px solid var(--border-medium); padding-bottom: 1.25rem; margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.25rem;">CHERUKURI V V M SUBHASH</h2>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; font-size: 0.85rem; color: var(--text-secondary);">
+          <span>📞 +91 8106125462</span>
+          <span>✉️ subhashcherukuri1729@gmail.com</span>
+          <span>🔗 linkedin.com/in/cherukuri-v-v-m-subhash-55b238291/</span>
+          <span>💻 github.com/subhashcherukuri</span>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Professional Summary</h4>
+        <p>Passionate Computer Science Engineering student with deep expertise in Data Structures and Algorithms, scalable Spring Boot and Java Full Stack Development. Strong problem-solving abilities and dedication to building clean, efficient, and reliable software architectures.</p>
+      </div>
+
+      <!-- Education -->
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Education</h4>
+        
+        <div style="margin-bottom: 0.85rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 700;">
+            <span>Gayatri Vidya Parishad College of Engineering (Autonomous)</span>
+            <span>2023 – Present</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; color: var(--text-secondary);">
+            <span>B.Tech in Computer Science & Engineering — CGPA: <strong>8.92 / 10</strong></span>
+            <span>Visakhapatnam, AP</span>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-weight: 700;">
+            <span>Sasi Junior College</span>
+            <span>2021 – 2023</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; color: var(--text-secondary);">
+            <span>Intermediate (MPC) — Marks: <strong>952 / 1000 (95.2%)</strong></span>
+            <span>Velivennu, AP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Technical Skills</h4>
+        <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.25rem;">
+          <li><strong>Programming:</strong> Java, C, SQL.</li>
+          <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Thymeleaf.</li>
+          <li><strong>Backend:</strong> Spring Boot, REST APIs, Spring Security, Spring AI, Hibernate, Spring Data JPA.</li>
+          <li><strong>Tools:</strong> Git, GitHub, Postman, VS Code, IntelliJ IDEA.</li>
+          <li><strong>Database:</strong> MySQL, PostgreSQL.</li>
+          <li><strong>Core CS:</strong> Data Structures & Algorithms, Object-Oriented Programming, DBMS, Operating System.</li>
+        </ul>
+      </div>
+
+      <!-- Internship -->
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Internship</h4>
+        <div style="display: flex; justify-content: space-between; font-weight: 700;">
+          <span>Artificial Intelligence Virtual Internship — Infosys SpringBoard</span>
+          <span>Dec 2025 – Jan 2026</span>
+        </div>
+        <ul style="padding-left: 1.2rem; margin-top: 0.35rem; display: flex; flex-direction: column; gap: 0.2rem;">
+          <li>Learned basic Machine Learning and Artificial Intelligence concepts through hands-on practice.</li>
+          <li>Collaborated with the team through daily meetings and project discussions.</li>
+          <li>Collected, annotated, and preprocessed satellite and drone image datasets for AI model training.</li>
+          <li>Developed and evaluated AI models for the AI-Driven Archaeological Site Mapping project.</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Projects</h4>
+        <div style="margin-bottom: 0.75rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 700;">
+            <span>AI Customer Support Ticket Management System</span>
+            <span style="font-size: 0.8rem; color: var(--accent-primary);">Live on Render</span>
+          </div>
+          <div style="font-size: 0.825rem; color: var(--text-secondary); margin-bottom: 0.25rem;">Java, Spring Boot, PostgreSQL, Spring Security, Thymeleaf, Spring AI, Groq LLM</div>
+          <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.2rem;">
+            <li>An AI-powered system to create, assign, and manage customer support tickets.</li>
+            <li>Integrated Groq LLM to analyze tickets for category, priority, sentiment, and summaries.</li>
+            <li>Implemented role-based access, ticket conversations, agent assignment, and admin dashboard.</li>
+          </ul>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; font-weight: 700;">
+            <span>EduEnroll – Online Student Course Registration Portal</span>
+            <span style="font-size: 0.8rem; color: var(--accent-primary);">Live on Render</span>
+          </div>
+          <div style="font-size: 0.825rem; color: var(--text-secondary); margin-bottom: 0.25rem;">Spring Boot, Spring Data JPA, Hibernate, MySQL, Thymeleaf, Spring Security</div>
+          <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.2rem;">
+            <li>Developed a full-stack portal for course registration and student enrollment management.</li>
+            <li>Implemented role-based authentication and authorization for Admin and Student users using Spring Security.</li>
+            <li>Built CRUD operations for students, courses, enrollments, and profile management.</li>
+            <li>Integrated MySQL with Spring Data JPA and Hibernate for efficient data management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div>
+        <h4 style="color: var(--accent-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Achievements</h4>
+        <ul style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.2rem;">
+          <li>Solved 500+ DSA problems across multiple coding platforms, enhancing problem-solving and coding proficiency (LeetCode).</li>
+          <li>Achieved a LeetCode rating of 1550+ through consistent performance in algorithmic and competitive programming.</li>
+          <li>Led a team in the Smart India Hackathon (SIH), contributing to solution design, development, and teamwork.</li>
+        </ul>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- Script tags -->
+  <script src="js/projects.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

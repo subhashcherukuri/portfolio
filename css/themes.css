@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Design Tokens & Color System
+   Cherukuri V V M Subhash Portfolio
+   Pleasant & Professional Modern Aesthetic
+   ========================================================================== */
+
+:root {
+  /* Font Families */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', 'Space Grotesk', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Dynamic Accent Colors (Default: Electric Cyan & Tech Indigo) */
+  --accent-hue: 188;
+  --accent-primary: #00d2ff;
+  --accent-primary-hover: #38bdf8;
+  --accent-glow: rgba(0, 210, 255, 0.25);
+  --accent-glow-subtle: rgba(0, 210, 255, 0.12);
+  --accent-secondary: #6366f1;
+  --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #6366f1 100%);
+  --accent-gradient-warm: linear-gradient(135deg, #00d2ff 0%, #3b82f6 50%, #8b5cf6 100%);
+  --accent-border: rgba(0, 210, 255, 0.3);
+
+  /* Common Spacings */
+  --container-max: 1200px;
+  --nav-height: 72px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 36px -6px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px -5px var(--accent-glow);
+}
+
+/* ==========================================================================
+   Dark Theme (Default "Deep Tech Slate & Electric Cyan")
+   ========================================================================== */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-body: #070b14;
+  --bg-surface: #0e1626;
+  --bg-surface-elevated: #152037;
+  --bg-surface-hover: #1c2b4a;
+  --bg-glass: rgba(14, 22, 38, 0.78);
+  --bg-glass-card: rgba(18, 28, 48, 0.65);
+  --bg-glass-border: rgba(255, 255, 255, 0.08);
+  --bg-glass-input: rgba(10, 16, 30, 0.65);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #070b14;
+
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-medium: rgba(255, 255, 255, 0.12);
+  --border-focus: var(--accent-primary);
+
+  --badge-bg: rgba(0, 210, 255, 0.1);
+  --badge-text: #38bdf8;
+  --badge-border: rgba(0, 210, 255, 0.25);
+
+  --code-bg: #090e1a;
+  --code-border: #1e293b;
+
+  --scrollbar-thumb: rgba(148, 163, 184, 0.25);
+  --scrollbar-track: rgba(7, 11, 20, 0.8);
+
+  --mesh-1: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+  --mesh-2: radial-gradient(at 100% 0%, rgba(0, 210, 255, 0.12) 0px, transparent 50%);
+  --mesh-3: radial-gradient(at 50% 100%, rgba(139, 92, 246, 0.12) 0px, transparent 60%);
+}
+
+/* ==========================================================================
+   Light Theme ("Warm Editorial Ivory & Sapphire")
+   ========================================================================== */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+  --bg-glass-card: rgba(255, 255, 255, 0.92);
+  --bg-glass-border: rgba(0, 0, 0, 0.08);
+  --bg-glass-input: rgba(248, 250, 252, 0.9);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --border-focus: #2563eb;
+
+  --accent-primary: #2563eb;
+  --accent-primary-hover: #1d4ed8;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --accent-glow-subtle: rgba(37, 99, 235, 0.08);
+  --accent-secondary: #0d9488;
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+  --accent-gradient-warm: linear-gradient(135deg, #2563eb 0%, #4f46e5 60%, #7c3aed 100%);
+  --accent-border: rgba(37, 99, 235, 0.3);
+
+  --badge-bg: rgba(37, 99, 235, 0.08);
+  --badge-text: #1d4ed8;
+  --badge-border: rgba(37, 99, 235, 0.2);
+
+  --code-bg: #f1f5f9;
+  --code-border: #e2e8f0;
+
+  --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 36px -6px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 24px -4px var(--accent-glow);
+
+  --scrollbar-thumb: rgba(100, 116, 139, 0.25);
+  --scrollbar-track: rgba(248, 250, 252, 0.8);
+
+  --mesh-1: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.06) 0px, transparent 50%);
+  --mesh-2: radial-gradient(at 100% 0%, rgba(13, 148, 136, 0.06) 0px, transparent 50%);
+  --mesh-3: radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.05) 0px, transparent 60%);
+}
+
+/* ==========================================================================
+   Accent Variants (Emerald & Violet Flavors)
+   ========================================================================== */
+[data-accent="emerald"] {
+  --accent-primary: #10b981;
+  --accent-primary-hover: #059669;
+  --accent-glow: rgba(16, 185, 129, 0.25);
+  --accent-glow-subtle: rgba(16, 185, 129, 0.1);
+  --accent-secondary: #06b6d4;
+  --accent-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --accent-border: rgba(16, 185, 129, 0.35);
+  --badge-bg: rgba(16, 185, 129, 0.12);
+  --badge-text: #10b981;
+  --badge-border: rgba(16, 185, 129, 0.28);
+}
+
+[data-accent="violet"] {
+  --accent-primary: #a855f7;
+  --accent-primary-hover: #9333ea;
+  --accent-glow: rgba(168, 85, 247, 0.25);
+  --accent-glow-subtle: rgba(168, 85, 247, 0.1);
+  --accent-secondary: #ec4899;
+  --accent-gradient: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  --accent-border: rgba(168, 85, 247, 0.35);
+  --badge-bg: rgba(168, 85, 247, 0.12);
+  --badge-text: #c084fc;
+  --badge-border: rgba(168, 85, 247, 0.28);
+}
+
+/* Modern Native Scrollbar */
+html {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+}
