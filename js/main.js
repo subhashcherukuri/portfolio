@@ -132,7 +132,7 @@ function initTypewriter() {
 
   const roles = [
     "Scalable Spring Boot & Java Backend Developer",
-    "Efficient DSA Problem Solver (500+ Solved)",
+    "Efficient DSA Problem Solver",
     "Clean Code & Robust REST API Architect",
     "Full-Stack & Intelligent Systems Engineer"
   ];
